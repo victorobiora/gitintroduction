@@ -1,0 +1,32 @@
+{
+  "name": "exchange",
+  "version": "1.0.0",
+  "description": "Exchange Project",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "binance-api-node": "^0.10.16",
+    "chart.js": "^2.9.4",
+    "core-js": "^3.25.5",
+    "fractional": "^1.0.0",
+    "uniqid": "^5.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Victor Obiora",
+  "license": "ISC"
+}

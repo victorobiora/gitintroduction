@@ -1,0 +1,358 @@
+@import url(../PlayfairDisplay-Italic-VariableFont_wght.ttf);
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;     
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Playfair Display' serif;
+    font-style: italic;
+    margin: 0;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+
+header{
+  grid-area: header;
+  margin-bottom: 2rem;
+  background:rgb(228, 182, 67);
+  position: relative;
+  z-index: 11;
+ 
+}
+
+header > div {
+    height: 100%;
+}
+
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: none;
+    height: 100%;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button__bar{
+    width: 100%;
+    height: 0.2rem;
+    background: rgba(0, 0, 0, 0.8);
+    display: block;
+    margin: 0.6rem 0;
+}
+
+button:hover {
+    background-color: rgb(248, 205, 96);
+    color: whitesmoke;
+}
+
+.first-nav{
+    width: 100%;
+   background: rgb(228, 182, 67);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main-nav__home a {
+    color: black ;
+    text-decoration: none;
+}
+
+    
+.mobile-nav {
+    height: 100vh;
+    width: 70%;
+    position: fixed;
+    background: white;
+    display: none;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    min-width: 14.2rem;
+    max-width: 20rem;
+}
+
+.mobile-nav__items {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+ 
+}
+.mobile-item {
+    margin: 1rem 0.5rem;
+}
+
+
+.main-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav__home{
+     margin: 1rem;
+     text-transform: uppercase;
+}
+
+.main-nav__home a {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+}
+
+.main-nav__home a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-nav__item{
+    position: relative;
+    right: 1rem;
+}
+
+.main-nav__item a{
+    text-transform: uppercase;
+    margin: 1rem;
+   text-decoration: none;
+   font-size: 1.1rem;
+   font-weight: 600;
+   color: black;
+}
+
+
+
+.main-nav__item a:hover, .main-nav__home a:hover, .footer-links-item a:hover {
+  color: aliceblue;
+}
+
+main{
+    margin-top: 1.3rem;
+    grid-area: main;
+}
+
+.starter-background{
+    position: relative;
+    height: 68vh;
+    background: linear-gradient(to bottom, white 1%, rgba(89, 89, 209, 0.5) 85%, transparent );
+    background-image: url(../img/ccharts3.png);
+    background-size: cover;
+    background-position: left 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 2.6rem;
+}
+
+.starter-background h1{
+    color: goldenrod;
+    position: absolute;
+    bottom: 8%;    
+    left: 1rem;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.starter-background h1:hover {
+    color: aliceblue;
+    
+}
+
+.write-up {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       font-size: 1.1rem;
+       font-style: italic;
+      
+ 
+}
+
+.intro-write__up{
+    justify-self: stretch;
+    padding: 0 2rem;
+}
+
+ .write-up span {
+     margin: 0.5rem 0 1rem 0;
+     width: 70%;
+     background-color:black;
+     border-radius: 30px;
+     padding: 1px;
+ }
+
+
+
+
+.signUp-button{
+    margin-top: 1rem;
+    background-color:  rgba(89, 89, 209, 0.5);
+    color: whitesmoke;
+    font-weight: 400;
+    border: 0.5px solid transparent;
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.crypto-grid{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+} 
+
+
+.container{
+ /*   display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-auto-flow: row;
+    grid-auto-rows: 3rem;
+    grid-row-gap: 1rem;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "col1 col2"
+                         "col3 col4";
+                           
+                        
+                        
+                        */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.crypto-charts{
+    flex-basis: 46%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    height: 15rem;
+    width: 60rem;
+    background-color: rgb(226, 189, 93);
+}
+
+
+.myChart {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    width: 100%;
+    text-transform: uppercase;
+    
+}
+
+#crypto-search{
+    display: inline-block;
+    width: 100%;
+    height: 5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.crypto-search__submit{
+    color: azure;
+    background-color:   rgba(89, 89, 209, 0.5);
+    padding: 0.4rem;
+    border-radius: 10px;
+    margin-top: 0.3rem;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+
+footer {
+    margin-top: 60px;
+    height: 14rem;
+    grid-area: footer;
+    background: linear-gradient(to right bottom, rgb(226, 184, 77) 55%, transparent);
+    padding: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-links{
+    height: 100%;
+}
+
+.footer-links__list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-links-item, .footer-links-item a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(37, 33, 33);
+    margin: 0.4rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.backdrop {
+    background-color: rgba(37, 33, 0, 0.5);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 11;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.disclaimer {
+    margin-bottom: 1rem;
+}
+

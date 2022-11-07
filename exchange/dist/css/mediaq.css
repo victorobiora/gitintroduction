@@ -1,0 +1,56 @@
+@media (max-width: 40rem){
+    
+    header {
+        margin-bottom: 0;
+        height: 3.4rem;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .starter-background {
+        background-position: right;
+    }
+    
+    .first-nav{
+        display: none;
+    }
+    .toggle-button {
+        display: block;
+    }
+
+    .main-nav__item a:hover{
+        color: goldenrod;
+    }
+
+   .container {
+       flex-direction: column;
+   }
+
+   .crypto {
+       flex-direction: column;
+   }
+
+   .crypto-grid {
+       width: 100%;
+       margin-bottom: 1rem;
+      
+   }
+   .search-form {
+       width: 100%;
+       right: 0;
+   }
+
+   .crypto-charts {
+       margin: 1rem 0;
+       width: 100%;
+   }
+
+   .footer-links__list {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+}
+
