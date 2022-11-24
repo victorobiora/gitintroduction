@@ -307,6 +307,30 @@ label{
     outline: none;
 }
 
+.search-feature {
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+#coinSrc {
+    width: 7rem;
+    height: 2rem;
+    display: block;
+    position: relative;
+    left: 46%;
+    margin-bottom: 0.4rem;
+    
+}
+
+.submit-search {
+     background-color: rgb(249, 229, 112);
+     color: azure;
+     width: 5rem;
+     height: 2rem;
+     border-radius: 8px;
+     border-color: transparent;
+}
 
 footer {
     margin-top: 60px;
