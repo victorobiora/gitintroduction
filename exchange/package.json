@@ -9,7 +9,7 @@
     "babel-polyfill": "^6.26.0",
     "binance-api-node": "^0.10.16",
     "chart.js": "^2.9.4",
-    "core-js": "^3.25.5",
+    "core-js": "^2.5.7",
     "fractional": "^1.0.0",
     "uniqid": "^5.2.0",
     "webpack": "^4.43.0",

@@ -57,15 +57,15 @@ export const loadChartsView = obj => {
                  chartObjTime: objNew.time
              };
              chartArr.push(chartObj)
-             console.log(objNew)
+   //          console.log(objNew)
             }  
         }
-        console.log(chartArr);
-        console.log(returnColor(chartArr))
+       // console.log(chartArr);
+        //console.log(returnColor(chartArr))
         label4Chart = chartArr.map(el=> el.chartObjTime)
         data4Chart = chartArr.map (el => el.chartObjHigh)
-        console.log(label4Chart)
-        console.log(data4Chart)
+        //console.log(label4Chart)
+       // console.log(data4Chart)
           const myChart = new Chart(el.location, {
                type: 'line',
                data: {

@@ -323,6 +323,7 @@ label{
     
 }
 
+
 .submit-search {
      background-color: rgb(249, 229, 112);
      color: azure;
@@ -330,6 +331,12 @@ label{
      height: 2rem;
      border-radius: 8px;
      border-color: transparent;
+     margin-bottom: 2rem;
+}
+
+.new-coin {
+    width: 30rem;
+    margin: auto;
 }
 
 footer {
